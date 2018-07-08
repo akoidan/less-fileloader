@@ -1,0 +1,3 @@
+- `git clone https://github.com/Deathangel908/less-fileloader && cd less-fileloader`
+- `yarn install`
+- `yarn run dev` or `yarn run prod`
