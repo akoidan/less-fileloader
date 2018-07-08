@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   entry: ['./src/main.js'],
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({template: 'src/index.html'}),
   ],
   devtool: '#source-map',
   resolve: {
@@ -17,7 +17,7 @@ module.exports = {
         loader: 'file-loader',
         options: {
           publicPath: '', // you can override this to put less output in different folder
-          name: '[name].[ext]?[sha512:hash:base64:6]' // I guess you want the filename to stay the same after it's modified
+          name: 'static/[name].[ext]?[sha512:hash:base64:6]' // I guess you want the filename to stay the same after it's modified
         }
       },
     ],
