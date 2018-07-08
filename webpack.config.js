@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
   entry: ['./src/main.js'],
   plugins: [
-    new HtmlWebpackPlugin({template: 'src/index.html'}),
+    new HtmlWebpackPlugin({template: 'src/index.ejs'}),
   ],
   devtool: '#source-map',
   resolve: {

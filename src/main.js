@@ -1,3 +1,3 @@
 import  a from "@/assets/styles.less"
 
-console.log(`styles are imported, url is ${a}`);
+console.log(`You don't need to import less file here at all, only in index.ejs but if you need the reference, there you have it: ${a}`);
